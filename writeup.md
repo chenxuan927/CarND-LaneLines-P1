@@ -49,22 +49,34 @@ In order to draw a single line on the left and right lanes, I modified the draw_
 - perform linear regression on both left line and right line group
 - output the averaged left and right lane line
 
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
-- pipeline steps
+I list down each pipeline step for processing photo solidWhiteRight.jpg
+- Original photo
 ![alt text][image01]
+- After GrayScale Transform
 ![alt text][image13]
+- After Gaussian Smoothing
 ![alt text][image14]
+- After Canny Transform
 ![alt text][image15]
+- After Image Mask by ROI
 ![alt text][image16]
+- After Hough Transform
 ![alt text][image17]
+- Merge Lines with Original Photo
 ![alt text][image18]
 
-- result
+The pipeline result
+- solidWhiteRight.jpg
 ![alt text][image01]![alt text][image07]
+- solidWhiteCurve.jpg
 ![alt text][image02]![alt text][image08]
+- solidYellowCurve.jpg
 ![alt text][image03]![alt text][image09]
+- solidYellowCurve2.jpg
 ![alt text][image04]![alt text][image10]
+- solidYellowLeft.jpg
 ![alt text][image05]![alt text][image11]
+- whiteCarLaneSwitch.jpg
 ![alt text][image06]![alt text][image12]
 
 
