@@ -81,12 +81,12 @@ The pipeline result
 
 
 ### 2. Identify potential shortcomings with your current pipeline
-- the current implementation assumes lane lines to be straight and does not support curved line
-- the region of the interest is pre-fixed only working for one driving scenario and may not working for others
-- the parameters for canny and hough transform are adjusted and set manually, which is subjective
+- the current implementation assumes lane lines to be straight, which does not support curved lane line
+- the fixed region of the interest only works for certain driving scenario, which is not applicable for other scenarios
+- the parameters for canny and hough transform are adjusted and set manually, which is subjective and may not be optimal
 
 
 ### 3. Suggest possible improvements to your pipeline
-- instead of using linear regression, a different approach should be used for supporting curved line
+- instead of using linear regression, a different approach should be used to support curved line
 - define a cost function and use neural network to learn the optimal parameters for canny and hough transform
-- enhance with tracking algoirthm to handle occlusion cases
+- enhance detection with tracking algoirthm to handle occlusion cases
